@@ -95,6 +95,7 @@ private int cariKata(String teks, String kataDicari) {
 
         jPanel1.setBackground(new java.awt.Color(255, 204, 204));
 
+        lblJudul.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblJudul.setText("APLIKASI PENGHITUNG KATA");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -119,6 +120,7 @@ private int cariKata(String teks, String kataDicari) {
         txtAreaInput.setRows(5);
         jScrollPane1.setViewportView(txtAreaInput);
 
+        btnHitung.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnHitung.setText("HITUNG");
         btnHitung.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -126,6 +128,7 @@ private int cariKata(String teks, String kataDicari) {
             }
         });
 
+        btnReset.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnReset.setText("RESET");
         btnReset.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -133,10 +136,13 @@ private int cariKata(String teks, String kataDicari) {
             }
         });
 
+        lblKata.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblKata.setText("KATA");
 
+        lblkarakter.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblkarakter.setText("KARAKTER");
 
+        lblKalimat.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblKalimat.setText("KALIMAT");
 
         txtKata.setEditable(false);
@@ -146,6 +152,7 @@ private int cariKata(String teks, String kataDicari) {
         txtKalimat.setEditable(false);
 
         buttonGroup1.add(rdbOtomatis);
+        rdbOtomatis.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         rdbOtomatis.setText("OTOMATIS");
         rdbOtomatis.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
@@ -154,6 +161,7 @@ private int cariKata(String teks, String kataDicari) {
         });
 
         buttonGroup1.add(rdbManual);
+        rdbManual.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         rdbManual.setText("MANUAL");
         rdbManual.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
@@ -161,10 +169,13 @@ private int cariKata(String teks, String kataDicari) {
             }
         });
 
+        lblParagraf.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblParagraf.setText("PARAGRAF");
 
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel1.setText("CARI KATA");
 
+        btnCari.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnCari.setText("CARI");
         btnCari.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -172,6 +183,7 @@ private int cariKata(String teks, String kataDicari) {
             }
         });
 
+        btnSimpan.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnSimpan.setText("SIMPAN");
         btnSimpan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -179,6 +191,7 @@ private int cariKata(String teks, String kataDicari) {
             }
         });
 
+        btnKeluar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnKeluar.setText("KELUAR");
         btnKeluar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -224,7 +237,7 @@ private int cariKata(String teks, String kataDicari) {
                         .addComponent(lblkarakter)
                         .addGap(18, 18, 18)
                         .addComponent(txtKarakter, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 1, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(btnSimpan, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -269,7 +282,7 @@ private int cariKata(String teks, String kataDicari) {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnSimpan)
                     .addComponent(btnKeluar))
-                .addContainerGap(9, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
