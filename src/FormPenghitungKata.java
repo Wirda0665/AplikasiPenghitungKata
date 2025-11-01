@@ -4,7 +4,6 @@ public class FormPenghitungKata extends javax.swing.JFrame {
 
     public FormPenghitungKata() {
         initComponents();
-        initComponents();
         setLocationRelativeTo(null);
     }
     
@@ -314,6 +313,7 @@ private int cariKata(String teks, String kataDicari) {
     txtKarakter.setText("");
     txtKalimat.setText("");
     txtParagraf.setText("");
+    txtCari.setText("");
 
     // Fokus langsung ke area input
     txtAreaInput.requestFocus();
